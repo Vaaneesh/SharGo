@@ -1,0 +1,16 @@
+{
+    "name": "ride-share-app",
+    "version": "1.0.0",
+    "scripts": {
+        "client": "cd client && npm run dev",
+        "server": "cd server && npm run dev",
+        "dev": "concurrently \"npm run client\" \"npm run server\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "ride-share-app": "file:"
+    }
+}
